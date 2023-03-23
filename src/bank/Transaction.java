@@ -3,6 +3,9 @@ package bank;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Represents a single transaction within the bank account.
+ */
 public class Transaction {
     /**
      * The date the transaction was made.

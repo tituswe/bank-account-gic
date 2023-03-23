@@ -8,14 +8,14 @@ import parser.CommandParser;
 import util.Printer;
 
 /**
- * The bank.Bank class.
+ * The bank class.
  */
 public class Bank {
-    private final String GREETING = "Welcome to AwesomeGIC bank.Bank! What would you like to do?\n"
+    private final String GREETING = "Welcome to AwesomeGIC Bank! What would you like to do?\n"
             + "[D]eposit \n"
             + "[W]ithdraw\n"
             + "[P]rint statement\n"
-            + "[Q]uit\n";
+            + "[Q]uit";
     private final String FAREWELL = "Thank you for banking with AwesomeGIC Bank.\n"
             + "Have a nice day!";
     /**
@@ -27,12 +27,12 @@ public class Bank {
      */
     private CommandParser commandParser;
     /**
-     * An instance of the {@code bank.BankAccount}, used to facilitate actions.
+     * An instance of the {@code BankAccount}, used to facilitate actions.
      */
     private BankAccount bankAccount;
 
     /**
-     * Constructor for the {@code bank.Bank} class.
+     * Constructor for the {@code Bank} class.
      * Initializes the active state, storage and bank account for the application.
      *
      */
@@ -43,7 +43,7 @@ public class Bank {
     }
 
     /**
-     * The main loop for the bank.Bank application.
+     * The main loop for the Bank application.
      * This method runs an event loop which takes in command inputs from the command line.
      */
     public void run() {
@@ -52,7 +52,7 @@ public class Bank {
 
         while (isActive) {
             String input = scanner.nextLine();
-            Printer.print("");
+            Printer.space();
             try {
                 Command command = commandParser.parse(input);
                 if (command instanceof QuitCommand) {

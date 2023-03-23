@@ -1,7 +1,7 @@
 import bank.Bank;
 
 /**
- * The main class for the bank.Bank Account application.
+ * The main class for the application.
  *
  * @author Titus Lowe
  * @version 0.1

@@ -1,4 +1,4 @@
-# bank.Bank Account
+# Bank Account
 
 You're designing a simple banking system that handles operations on bank accounts. At the moment, your system is capable of three features:
 - depositing an amount
@@ -11,7 +11,7 @@ When account is created, its balance is 0.
 
 When launching the application, it prompts user for actions:
 ```
-Welcome to AwesomeGIC bank.Bank! What would you like to do?
+Welcome to AwesomeGIC Bank! What would you like to do?
 [D]eposit 
 [W]ithdraw
 [P]rint statement
@@ -89,6 +89,6 @@ q
 
 System responds with:
 ```
-Thank you for banking with AwesomeGIC bank.Bank.
+Thank you for banking with AwesomeGIC Bank.
 Have a nice day!
 ```

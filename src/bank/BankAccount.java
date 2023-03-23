@@ -3,6 +3,9 @@ package bank;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * Represents a bank account.
+ */
 public class BankAccount {
     /**
      * The current balance of the bank account.
@@ -42,12 +45,10 @@ public class BankAccount {
     public String toString() {
         String HEADER = "Date                   | Amount  | Balance";
         StringBuilder builder = new StringBuilder();
-        builder.append(HEADER)
-                .append("\n");
+        builder.append(HEADER);
 
         for (Transaction t : transactions) {
-            builder.append(t.toString())
-                    .append("\n");
+            builder.append("\n").append(t.toString());
         }
 
         String result = builder.toString();

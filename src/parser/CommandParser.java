@@ -1,11 +1,25 @@
 package parser;
 
-import command.*;
-import parser.Parser;
+import command.Command;
+import command.DepositCommand;
+import command.PrintStatementCommand;
+import command.QuitCommand;
+import command.WithdrawCommand;
 
-public class CommandParser implements Parser<Command> {
+/**
+ * Parses the user input into a command.
+ */
+public class CommandParser {
+
+    /**
+     * Parses the user input into a command for execution.
+     *
+     * @param input User input
+     * @return The command to be executed, based on the input
+     */
     public Command parse(String input) {
         input = input.toUpperCase();
+
         switch (input) {
         case "D":
             return new DepositCommand();
@@ -16,7 +30,7 @@ public class CommandParser implements Parser<Command> {
         case "Q":
             return new QuitCommand();
         default:
-            throw new IllegalArgumentException("Illegal Argument: Enter a command\n");
+            throw new IllegalArgumentException("Illegal Argument: Enter a command");
         }
     }
 }
