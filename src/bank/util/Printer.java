@@ -1,4 +1,4 @@
-package util;
+package bank.util;
 
 /**
  * The printer utility class to make custom print configurations.

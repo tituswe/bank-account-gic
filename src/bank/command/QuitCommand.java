@@ -1,8 +1,8 @@
-package command;
+package bank.command;
 
 import java.util.Scanner;
 
-import bank.BankAccount;
+import bank.model.BankAccount;
 
 /**
  * Terminates the program.

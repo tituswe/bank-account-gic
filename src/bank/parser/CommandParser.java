@@ -1,10 +1,10 @@
-package parser;
+package bank.parser;
 
-import command.Command;
-import command.DepositCommand;
-import command.PrintStatementCommand;
-import command.QuitCommand;
-import command.WithdrawCommand;
+import bank.command.Command;
+import bank.command.DepositCommand;
+import bank.command.PrintStatementCommand;
+import bank.command.QuitCommand;
+import bank.command.WithdrawCommand;
 
 /**
  * Parses the user input into a command.
@@ -30,7 +30,7 @@ public class CommandParser {
         case "Q":
             return new QuitCommand();
         default:
-            throw new IllegalArgumentException("Illegal Argument: Enter a command");
+            throw new IllegalArgumentException("Illegal Argument: Enter a main.command");
         }
     }
 }

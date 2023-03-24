@@ -1,4 +1,4 @@
-package bank;
+package bank.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,7 +21,7 @@ public class Transaction {
     private double balance;
 
     /**
-     * Constructor for the {@code bank.Transaction} class.
+     * Constructor for the {@code Transaction} class.
      * Initializes the date and amount transacted.
      *
      * @param date The date the transaction was made
@@ -31,6 +31,33 @@ public class Transaction {
         this.date = date;
         this.amount = amount;
         this.balance = balance;
+    }
+
+    /**
+     * Getter method for the date.
+     *
+     * @return date
+     */
+    public Date getDate() {
+        return this.date;
+    }
+
+    /**
+     * Getter method for the amount.
+     *
+     * @return amount
+     */
+    public double getAmount() {
+        return this.amount;
+    }
+
+    /**
+     * Getter method for the balance.
+     *
+     * @return balance
+     */
+    public double getBalance() {
+        return this.balance;
     }
 
     /**

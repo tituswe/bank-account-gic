@@ -1,4 +1,4 @@
-package bank;
+package bank.model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,13 +17,22 @@ public class BankAccount {
     private ArrayList<Transaction> transactions;
 
     /**
-     * Constructor for the {@code bank.BankAccount} class.
+     * Constructor for the {@code BankAccount} class.
      * Initializes the balance and transactions of the bank account.
      *
      */
     public BankAccount() {
         this.balance = 0;
         this.transactions = new ArrayList<>();
+    }
+
+    /**
+     * Getter method for balance.
+     *
+     * @return balance The balance
+     */
+    public double getBalance() {
+        return this.balance;
     }
 
     /**

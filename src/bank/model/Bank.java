@@ -1,11 +1,11 @@
-package bank;
+package bank.model;
 
 import java.util.Scanner;
 
-import command.Command;
-import command.QuitCommand;
-import parser.CommandParser;
-import util.Printer;
+import bank.command.Command;
+import bank.command.QuitCommand;
+import bank.parser.CommandParser;
+import bank.util.Printer;
 
 /**
  * The bank class.
@@ -21,9 +21,9 @@ public class Bank {
     /**
      * A boolean flag to check the active state of the application.
      */
-    private static boolean isActive;
+    private boolean isActive;
     /**
-     * An instance of the {@code parser.CommandParser}, used to parse input into commands.
+     * An instance of the {@code CommandParser}, used to parse input into commands.
      */
     private CommandParser commandParser;
     /**
@@ -40,6 +40,24 @@ public class Bank {
         isActive = true;
         commandParser = new CommandParser();
         bankAccount = new BankAccount();
+    }
+
+    /**
+     * Getter for the active state.
+     *
+     * @return isActive The active state
+     */
+    public boolean getIsActive() {
+        return this.isActive;
+    }
+
+    /**
+     * Getter for the bank account.
+     *
+     * @return bankAccount The bank account
+     */
+    public BankAccount getBankAccount() {
+        return this.bankAccount;
     }
 
     /**

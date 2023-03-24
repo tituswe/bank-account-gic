@@ -1,4 +1,6 @@
-import bank.Bank;
+package bank;
+
+import bank.model.Bank;
 
 /**
  * The main class for the application.

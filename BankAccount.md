@@ -1,11 +1,11 @@
 # Bank Account
 
-You're designing a simple banking system that handles operations on bank accounts. At the moment, your system is capable of three features:
+You're designing a simple banking system that handles operations on bank.model accounts. At the moment, your system is capable of three features:
 - depositing an amount
 - withdrawing an amount
 - printing account statement
 
-User input and output can be from command line. 
+User input and output can be from bank.command line. 
 
 When account is created, its balance is 0.
 

@@ -1,9 +1,9 @@
-package command;
+package bank.command;
 
 import java.util.Scanner;
 
-import bank.BankAccount;
-import util.Printer;
+import bank.model.BankAccount;
+import bank.util.Printer;
 
 /**
  * Makes a withdrawal from the bank account.
