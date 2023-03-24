@@ -7,6 +7,7 @@ by Titus Lowe
 ### System Requirements
 
 * Ensure you have [Java](https://www.oracle.com/sg/java/technologies/downloads/) version 11 or higher installed
+* Works on Windows and MacOS
 
 ### Testing with CLI
 1. Download and extract the `bank-account-gic.zip` file
